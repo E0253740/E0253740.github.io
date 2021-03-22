@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://E0253740.github.io/</id>
     <title>Xing Da&apos;s Website</title>
-    <updated>2021-03-22T12:53:10.777Z</updated>
+    <updated>2021-03-22T12:59:12.591Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://E0253740.github.io/"/>
     <link rel="self" href="https://E0253740.github.io/atom.xml"/>
@@ -10,29 +10,6 @@
     <logo>https://E0253740.github.io/images/avatar.png</logo>
     <icon>https://E0253740.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Xing Da&apos;s Website</rights>
-    <entry>
-        <title type="html"><![CDATA[关于]]></title>
-        <id>https://E0253740.github.io/post/about/</id>
-        <link href="https://E0253740.github.io/post/about/">
-        </link>
-        <updated>2021-03-22T11:09:48.000Z</updated>
-        <content type="html"><![CDATA[<blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<p>本站于2021年3月22日建立，初衷是为了记录我朝计算机行业不断努力过程的点点滴滴，闲暇时也会记录一些对生活的感悟，欢迎关注呀！</p>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<p>很高兴认识你，我的名字叫做邢达，出生于黑龙江哈尔滨并在这个美丽的城市度过了人生的前十六年的时光。16岁时，我获得了新加坡国立大学的奖学金，来到了新加坡国立大学读书。本科是土木工程专业，在大三左右决心转向Computer Science, 我的主要技能为Python, Java, MySQL, MongoDB, R以及Tableau. 期望的职业发展方向为后端/全站或者数据分析。确定了目标，就会不断地努力前进，就是我的性格~</p>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<p>游泳，健身，旅游<br>
-去过的国家：<br>
-中国，新加坡，泰国，波兰，挪威，奥地利，意大利，法国，马来西亚</p>
-<h2 id="联系我呀">📬 联系我呀</h2>
-<p>Gmail: xingda0911@gmail.com<br>
-Wechat: xd15604666206<br>
-QQ: 2634528022</p>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://E0253740.github.io/post/hello-gridea/</id>
