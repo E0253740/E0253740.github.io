@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://E0253740.github.io/</id>
     <title>Xing Da&apos;s Website</title>
-    <updated>2021-03-23T07:39:38.017Z</updated>
+    <updated>2021-03-24T01:41:07.890Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://E0253740.github.io/"/>
     <link rel="self" href="https://E0253740.github.io/atom.xml"/>
@@ -10,6 +10,17 @@
     <logo>https://E0253740.github.io/images/avatar.png</logo>
     <icon>https://E0253740.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Xing Da&apos;s Website</rights>
+    <entry>
+        <title type="html"><![CDATA[Java 后端开发学习路线]]></title>
+        <id>https://E0253740.github.io/post/java-hou-duan-kai-fa-xue-xi-lu-xian/</id>
+        <link href="https://E0253740.github.io/post/java-hou-duan-kai-fa-xue-xi-lu-xian/">
+        </link>
+        <updated>2021-03-24T01:38:21.000Z</updated>
+        <content type="html"><![CDATA[<p>今天看了B站大佬对Java后端开发所需要掌握的技能的总结，觉得很全面，自己要做的东西还有很多。<br>
+成神之路，需不断努力。<br>
+<img src="https://E0253740.github.io//post-images/1616549993396.jpg" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://E0253740.github.io/post/hello-gridea/</id>
