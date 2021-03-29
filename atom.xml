@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://E0253740.github.io/</id>
     <title>Xing Da&apos;s Website</title>
-    <updated>2021-03-24T01:41:07.890Z</updated>
+    <updated>2021-03-29T02:45:39.239Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://E0253740.github.io/"/>
     <link rel="self" href="https://E0253740.github.io/atom.xml"/>
@@ -10,6 +10,55 @@
     <logo>https://E0253740.github.io/images/avatar.png</logo>
     <icon>https://E0253740.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Xing Da&apos;s Website</rights>
+    <entry>
+        <title type="html"><![CDATA[i++与++i的区别详解]]></title>
+        <id>https://E0253740.github.io/post/iyu-i-de-qu-bie-xiang-jie/</id>
+        <link href="https://E0253740.github.io/post/iyu-i-de-qu-bie-xiang-jie/">
+        </link>
+        <updated>2021-03-29T02:31:04.000Z</updated>
+        <content type="html"><![CDATA[<p>周六做京东笔试的时候遇到了对于i++与++i的考察，正好今天想起来，就仔细深入的研究了一下<br>
+先来看几个例子：</p>
+<h2 id="sample-1int-i-0i-isystemoutprintlni-i正确答案0详解先看i根据原理先自增然后返回自增之前的值i-自增后i-1但是接着返回自增之前的值0此时表达式变成-i-00没有赋值给-i-时-i-的值是1但是当把0赋值给-i-时i-的值就又变成0了-因此-i-i-这句代码是做无用功因为-i-的值最终还是和原来一样">Sample 1<br>
+int i = 0;<br>
+i = i++;<br>
+System.out.println(&quot;i = &quot; + i);<br>
+正确答案：0<br>
+详解：<br>
+先看i++，根据原理“先自增，然后返回自增之前的值”，i 自增后，i = 1，但是接着返回自增之前的值0，此时表达式变成 i = 0，0没有赋值给 i 时 i 的值是1，但是当把0赋值给 i 时，i 的值就又变成0了。因此 i = i++ 这句代码是做无用功，因为 i 的值最终还是和原来一样。</h2>
+<h2 id="sample-2int-a-2int-b-3-a-asystemoutprintlnb正确答案9">Sample 2<br>
+int a = 2;<br>
+int b = (3 * a++) + a;<br>
+System.out.println(b);<br>
+正确答案：9</h2>
+<h2 id="sample-3int-a-2int-b-a-3-asystemoutprintlnb正确答案8">Sample 3<br>
+int a = 2;<br>
+int b = a + (3 * a++);<br>
+System.out.println(b);<br>
+正确答案：8</h2>
+<h2 id="sample-4int-i-1int-j-1int-k-i-i-j-jsystemoutprintlnk正确答案8">Sample 4<br>
+int i = 1;<br>
+int j = 1;<br>
+int k = i++ + ++i + ++j + j++;<br>
+System.out.println(k);<br>
+正确答案：8</h2>
+<h2 id="sample-5int-a-0int-b-0a-ab-asystemoutprintlna-a-b-b正确答案a1-b0">Sample 5<br>
+int a = 0;<br>
+int b = 0;<br>
+a = a++;<br>
+b = a++;<br>
+System.out.println(&quot;a = &quot; + a + &quot;, b = &quot; + b);<br>
+正确答案：a=1 b=0</h2>
+<p>基本原理是：<br>
+i++ 即后加加，原理是：先自增，然后返回自增之前的值<br>
+++i 即前加加，原理是：先自增，然后返回自增之后的值</p>
+<p>i++的基本原理可以用下面这个代码表示<br>
+int temp = i;<br>
+i = i + 1;<br>
+return temp;<br>
+更多细节参考CSDN博客：<br>
+https://blog.csdn.net/android_cai_niao/article/details/106027313</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Java 后端开发学习路线]]></title>
         <id>https://E0253740.github.io/post/java-hou-duan-kai-fa-xue-xi-lu-xian/</id>
