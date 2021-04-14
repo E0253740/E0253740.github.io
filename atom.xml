@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://E0253740.github.io/</id>
     <title>Xing Da&apos;s Website</title>
-    <updated>2021-04-12T08:49:49.216Z</updated>
+    <updated>2021-04-14T04:58:07.545Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://E0253740.github.io/"/>
     <link rel="self" href="https://E0253740.github.io/atom.xml"/>
@@ -17,9 +17,37 @@
         </link>
         <updated>2021-04-12T08:38:57.000Z</updated>
         <content type="html"><![CDATA[<p>最短生成树MST，是指在<strong>无向图(undirected graph)<strong>中连接所有节点的最小的路径；<br>
-注意这里叫做树，也就意味着他有</strong>N个节点，N-1条边</strong>，所以才叫Tree<br>
+注意这里叫做树，也就意味着他有</strong>V个节点，V-1条边</strong> ---&gt; E = V-1，所以才叫Tree<br>
 那么求得最短生成树一共有两种算法，Prim's Algorithm普里姆算法以及Kruskal's Algorithm</p>
 <h1 id="1-prims-algorithm">1. Prim's Algorithm</h1>
+<p>普里姆算法，核心思想是基于优先队列 - PriorityQueue 实现,<br>
+两大核心数据结构:</p>
+<ol>
+<li>PriorityQueue<TreeNode> pq = new PriorityQueue<TreeNode>();</li>
+<li>int [] visited = new int[n];<br>
+普里姆算法<strong>需要指定从哪个Vertex开始</strong>。具体步骤如下：</li>
+</ol>
+<ul>
+<li>假定从0开始，那么把所有与0相连的边放入优先队列</li>
+<li>对优先队列实现ExtractMin()方法，提取出队列里最短的边,判断这条边的另一个顶点是否已经被visited, 如果已经visited, 再寻找下一条最短的边</li>
+<li>假如说这条边为(0,1)那么再把所有和1相连的边放入PriorityQueue</li>
+<li>重复这个过程直到优先队列PQ.isEmpty() == true;<br>
+<img src="https://E0253740.github.io//post-images/1618376178473.jpg" alt="" loading="lazy"><br>
+可以看到，这里如果我们声明了从0开始，会是这个样子</li>
+</ul>
+<h1 id="2-kruskals-algorithm">2. Kruskal's Algorithm</h1>
+<p>Kruskal's Algorithm不需要指定从哪个结点开始，Kruskal算法的核心思想是先找到edge list, 对其进行排序从而得到最小边--&gt;最大边的顺序<br>
+那么Kruskal's Algorithm所需要的几个核心类和数据结构是:</p>
+<ul>
+<li>classe Edge implements Comparable<Edge> (用于对edge进行排序)</li>
+<li>class UnionFind ufds = new UnionFind(0)</li>
+<li>public class main(String[] args)<br>
+其中第二个class ufds(并查集)是用于检查当前边是否会形成cycle<br>
+<img src="https://E0253740.github.io//post-images/1618376087543.jpg" alt="" loading="lazy"><br>
+可以看到，Kruskal算法会先从全局里的最短边开始</li>
+</ul>
+<p>Prim's &amp; Kruskal's最后所得到的都会是相同的结果，都属于贪心算法(每一步都寻求最优解)<br>
+<img src="https://E0253740.github.io//post-images/1618376048263.jpg" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
     <entry>
