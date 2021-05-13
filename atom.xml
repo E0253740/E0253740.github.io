@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://E0253740.github.io/</id>
     <title>Xing Da&apos;s Website</title>
-    <updated>2021-05-12T13:11:14.693Z</updated>
+    <updated>2021-05-13T07:54:57.376Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://E0253740.github.io/"/>
     <link rel="self" href="https://E0253740.github.io/atom.xml"/>
@@ -16,7 +16,17 @@
         <link href="https://E0253740.github.io/post/ssm-hu-lian-wang-dian-shang-xiang-mu-xiao-yuan-o2o-ping-tai/">
         </link>
         <updated>2021-05-12T13:08:06.000Z</updated>
-        <content type="html"><![CDATA[<p>该项目为基于Java语言及Java Web开发框架的偏重于后端的项目</p>
+        <content type="html"><![CDATA[<p>该项目为基于Java语言及Java Web开发框架的偏重于后端的项目, 用到的开发工具有：</p>
+<ul>
+<li><em>JDK8</em> (Java编译环境)</li>
+<li><em>Maven</em> (Java 项目管理)</li>
+<li><em>MySQL</em> (后台数据储存)</li>
+<li><em>Chrome</em> (项目展示)</li>
+<li><em>Tomcat</em> (Java Web 应用服务器)</li>
+<li><em>Eclipse</em> (编译器)</li>
+</ul>
+<h1 id="10-版本-ssm-spring-springmvc-mybatis">1.0 版本 SSM (Spring, SpringMVC, MyBatis)</h1>
+<figure data-type="image" tabindex="1"><img src="https://E0253740.github.io//post-images/1620892402228.jpg" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
